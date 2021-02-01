@@ -1,0 +1,76 @@
+Klassifikaatori täielik 
+nimetus 
+
+Eesti majanduse tegevusalade klassifikaator 2008.3.0 
+
+Lühend 
+
+EMTAK 2008.3.0 
+
+Klassifikaatori 
+ingliskeelne nimetus 
+
+Estonian Classification of Economic Activities 2008.3.0 
+
+Rahvusvaheline 
+alusklassifikaator 
+
+Statistical Classification of Economic Activities in the European Community (NACE 
+Rev.2) 
+
+Haldaja 
+
+Justiitsministeeriumi Registrite ja Infosüsteemide Keskus 
+
+Õiguslik alus 
+
+1. Riikliku statistika seadus (RT I, 15.03.2019, 10) 
+2. Vabariigi valitsuse 10.01.2008 määrus nr 11 „Klassifikaatorite süsteem" (RT I 2008, 
+4, 27) 
+
+Kasutusele võetud 
+
+1.01.2018 
+
+Uuendamisaeg 
+
+  
+
+Eelnev klassifikaator 
+
+Eesti majanduse tegevusalade klassifikaator 2008.2.0  
+Eesti majanduse tegevusalade klassifikaator 2003, kasutusel 2003 - 2008 
+
+Struktuur 
+
+Lühiiseloomustus 
+
+1. tase: 21 jagu, tähtkood A-U 
+2. tase: 88 osa, kahekohaline numberkood 01 kuni 99 
+3. tase: 272 gruppi, kolmekohaline numberkood 011 kuni 990 
+4. tase: 615 klassi, neljakohaline numberkood 0111 kuni 9900 
+5. tase: 775 alamklassi, viiekohaline numberkood 01111 kuni 99009 
+
+Eesti majanduse tegevusalade klassifikaator (EMTAK 2008) on välja töötatud 
+Euroopa Ühenduse majandustegevusalade statistilise klassifikaatori NACE Rev.2 
+alusel. NACE Rev.2 madalaimat taset tähistab neljakohaline numberkood. EMTAK-i 
+madalaim tase on viiekohaline. Selleks et paremini kirjeldada tegevusalasid, on 
+võrreldes NACE Rev.2-ga lisatud üks lisatase. Viies tase on saadud NACE Rev.2 
+neljanda taseme disagregeerimisel tegevusalade täpsemaks liigitamiseks. 
+
+Sidusklassifikaatorid 
+
+Toodete ja teenuste klassifikaator (TTK); Tööstustoodete nimistu (TTN); 
+Kombineeritud nomenklatuur (KN) 
+
+Valdkond 
+
+Tegevusalad 
+
+Kontakt 
+
+klassifikaatorid@stat.ee 
+
+ 
+
+
