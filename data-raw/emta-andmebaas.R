@@ -4,6 +4,7 @@
 # (c) 2020 - Raoul Lättemäe
 #
 ##############################################
+rm(list=ls())
 library(openxlsx)     # impordi excelist
 library(tidyverse)    # tidyverse
 library(lubridate)    # kuupäevafunktsioonid
@@ -13,18 +14,25 @@ library(lubridate)    # kuupäevafunktsioonid
 
 # Lae andmed EMTA kodulehelt
 # muuda vajadusel allolev näitaja
-kv <- '2020_iv'
-my.date <- "31.12.20"
+kv <- '2021_iii'
+my.date <- "30.09.21"
 # alates 2019-II kvartalist CSV
 # url <- paste("https://www.emta.ee/sites/default/files/kontaktid-ja-ametist/maksulaekumine-statistika/tasutud-maksud/tasutud_maksud_",
 #              kv,
 #              "_kvartal.csv", sep = ""
 # )
 # data <- read.csv(file = url, sep = ";", fileEncoding = "latin1")
-url <- paste("https://www.emta.ee/sites/default/files/kontaktid-ja-ametist/maksulaekumine-statistika/tasutud-maksud/tasutud_maksud_",
+# url <- paste("https://www.emta.ee/sites/default/files/kontaktid-ja-ametist/maksulaekumine-statistika/tasutud-maksud/tasutud_maksud_",
+#             kv,
+#             "_kvartal.xlsx", sep = ""
+#)
+
+#https://ncfailid.emta.ee/index.php/s/adoNKa6oFbEgSSr/download/tasutud_maksud_2021_iii_kvartal.xlsx
+url <- paste("https://ncfailid.emta.ee/index.php/s/adoNKa6oFbEgSSr/download/tasutud_maksud_",
              kv,
              "_kvartal.xlsx", sep = ""
 )
+
 
 # vanemad andmed teistsuguse URLiga
 # url <- "https://www.emta.ee/sites/default/files/kontaktid-ja-ametist/maksulaekumine-statistika/tasutud-maksud/tasutud_maksud_10.01.2018.xlsx"
@@ -184,3 +192,4 @@ rm(data)
 
 usethis::use_data(emta.andmebaas, overwrite = TRUE)
 rm(emta.andmebaas)
+rm(list=ls())

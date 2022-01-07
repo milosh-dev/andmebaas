@@ -1,7 +1,7 @@
 ## code to prepare `emta.kaibed.kasv` dataset goes here
 library(tidyverse)
 library(RcppRoll)
-
+rm(list=ls())
 load("data/emta.andmebaas.rda")
 
 data <- emta.andmebaas %>%
@@ -11,11 +11,22 @@ rm(emta.andmebaas)
 
 emta.kaibed.kasv <- data %>%
   group_by(Registrikood) %>%
-#  mutate (Aastakäive = roll_sumr(Käive, n = 4, align = "right", na.rm = TRUE)) %>%
+  mutate (Aastakäive = roll_sumr(Käive, n = 4, align = "right", na.rm = TRUE)) %>%
 #  mutate (Volatiilsus = roll_sd(Käive, n = 4, align = "right", na.rm = TRUE) / Aastakäive) %>%
   mutate (Käibekasv = 100 * (Käive / lag(Käive, n = 4) -1)) %>%
   ungroup() %>%
-  select(Kuupäev, Registrikood, Käibekasv) %>%
+  select(Kuupäev, Registrikood, Käibekasv, Aastakäive) %>%
+  drop_na()
+
+usethis::use_data(emta.kaibed.kasv, overwrite = TRUE)
+
+f <- data %>%
+  group_by(Registrikood) %>%
+  mutate (Aastakäive = roll_sumr(Käive, n = 4, align = "right", na.rm = TRUE)) %>%
+  #  mutate (Volatiilsus = roll_sd(Käive, n = 4, align = "right", na.rm = TRUE) / Aastakäive) %>%
+  mutate (Käibekasv = 100 * (Käive / lag(Käive, n = 4) -1)) %>%
+  ungroup() %>%
+  select(Kuupäev, Registrikood, Käibekasv, Aastakäive) %>%
   drop_na()
 
 
@@ -28,4 +39,3 @@ e <- data %>%
   ungroup() %>%
   drop_na()
 
-usethis::use_data(emta.kaibed.kasv, overwrite = TRUE)

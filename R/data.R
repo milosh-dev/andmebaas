@@ -121,6 +121,7 @@
 #'   \item{\code{Kuupäev}}{double Vaatluse kuupäev}
 #'   \item{\code{Registrikood}}{character Ettevõtte registrikood}
 #'   \item{\code{Käibekasv}}{double Käibe % muutus võrreldes eelmise aastaga}
+#'   \item{\code{Aastakäive}}{double ettevõtte viimase IV kvartali käive}
 #'}
 #' @details DETAILS
 "emta.kaibed.kasv"

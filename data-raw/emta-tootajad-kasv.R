@@ -1,4 +1,5 @@
 ## code to prepare `emta.tootajad.kasv` dataset goes here
+rm(list=ls())
 library(tidyverse)
 library(RcppRoll)
 

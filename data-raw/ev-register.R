@@ -3,7 +3,7 @@
 #
 # Autor: Raoul Lättemäe, juuli-august 2020
 ################################################
-
+rm(list=ls())
 library(openxlsx)
 library(tidyverse)
 
@@ -18,10 +18,10 @@ download.file(url, local)
 unzip(local, exdir = "data-raw")
 
 # lae csv andmed
-ev.register <- read_csv2("data-raw/ettevotja_rekvisiidid_2021-01-27.csv")
+ev.register <- read_csv2("data-raw/ettevotja_rekvisiidid_2022-01-07.csv")
 
 # Kustuta pakkimata andmed
-file.remove("data-raw/ettevotja_rekvisiidid_2021-01-27.csv")
+file.remove("data-raw/ettevotja_rekvisiidid_2022-01-07.csv")
 
 
 ev.register <- as_tibble(ev.register)
